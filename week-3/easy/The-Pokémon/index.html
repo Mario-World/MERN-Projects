@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Pokémon Cards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form">
+    <input type="number" id="count" placeholder="Number of cards" min="1" max="20" />
+    <select id="category">
+      <option value="fire">Fire</option>
+      <option value="water">Water</option>
+      <option value="grass">Grass</option>
+      <option value="electric">Electric</option>
+      <option value="normal">Normal</option>
+      <!-- Add more types as needed -->
+    </select>
+    <button onclick="getPokemons()">Show Cards</button>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
